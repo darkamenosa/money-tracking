@@ -4,7 +4,7 @@
  */
 import { StyleSheet, Platform } from 'react-native'
 
-export function create(styles: Object): { [name: string]: number } {
+function create(styles: Object): { [name: string]: number } {
   const platformStyles = {}
 
   Object.keys(styles).forEach(name => {
@@ -21,4 +21,8 @@ export function create(styles: Object): { [name: string]: number } {
   })
 
   return StyleSheet.create(platformStyles)
+}
+
+export const AppStyleSheet = {
+  create,
 }

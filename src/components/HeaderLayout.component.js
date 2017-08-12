@@ -1,15 +1,8 @@
 // @flow
 import React from 'react'
-import {
-  Container,
-  Header,
-  Title,
-  Left,
-  Button,
-  Icon,
-  Right,
-  Body,
-} from 'native-base'
+import { Container, Title, Button, Icon } from 'native-base'
+
+import { DefaultHeader } from 'components'
 
 // prettier-ignore
 type Props = {
@@ -20,19 +13,18 @@ type Props = {
 
 export const HeaderLayout = ({ title, children, navigation }: Props) =>
   <Container>
-    <Header>
-      <Left>
+    <DefaultHeader
+      left={
         <Button transparent onPress={() => navigation.navigate('DrawerOpen')}>
           <Icon name="menu" />
         </Button>
-      </Left>
-      <Body>
+      }
+      body={
         <Title>
           {title}
         </Title>
-      </Body>
-      <Right />
-    </Header>
+      }
+    />
     {children}
   </Container>
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { Text } from 'react-native'
 import { Content, Card, CardItem, Body, Button } from 'native-base'
 import { HeaderLayout } from 'components'
+import { AppStyleSheet } from 'utils'
 
 class Expense extends React.Component {
   render() {
@@ -41,5 +42,11 @@ class Expense extends React.Component {
     )
   }
 }
+
+const styles = AppStyleSheet.create({
+  row: {
+    flexDirection: 'row',
+  },
+})
 
 export const ExpenseScreen = Expense

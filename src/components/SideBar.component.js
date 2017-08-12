@@ -16,7 +16,7 @@ export const SideBar = (props: Props) =>
       <Image
         source={{
           uri:
-            'https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/drawer-cover.png',
+            'https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/img/drawer-cover.png',
         }}
         style={{
           height: 120,
@@ -30,7 +30,7 @@ export const SideBar = (props: Props) =>
           style={{ height: 80, width: 70 }}
           source={{
             uri:
-              'https://github.com/GeekyAnts/NativeBase-KitchenSink/raw/react-navigation/img/logo.png',
+              'https://raw.githubusercontent.com/GeekyAnts/NativeBase-KitchenSink/master/img/logo.png',
           }}
         />
       </Image>
